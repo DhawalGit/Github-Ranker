@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Ranker | Daily Top 7 GitHub Repos & Developer Tools</title>
+    <meta name="description" content="Discover emerging top 7 open-source tools refreshed daily with AI-powered developer pain point analysis.">
+    <meta name="keywords" content="GitHub trending, developer tools, open source, AI software, software engineering">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google AdSense Script (Uncomment when approved) -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+    <!-- Navigation Sidebar -->
+    <aside class="sidebar">
+        <div class="brand">
+            <h2>⚡ Github Ranker</h2>
+            <p>Daily Trending Repos & Pain Point Analysis</p>
+        </div>
+        <nav class="nav-links">
+            <button class="nav-btn active" data-page="today">🔥 Top 7 Repos Today</button>
+            <button class="nav-btn" data-page="archives">📅 History Archives</button>
+            <button class="nav-btn" data-page="about">💡 About & Purpose</button>
+            <button class="nav-btn" data-page="privacy">📜 Privacy Policy</button>
+            <button class="nav-btn" data-page="contact">📬 Contact Us</button>
+        </nav>
+
+        <!-- Sidebar Ad Unit Placeholder (Commented Out) -->
+        <!-- 
+        <div class="ad-unit sidebar-ad">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0000000000000000" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div> 
+        -->
+    </aside>
+
+    <!-- Main Content Body -->
+    <main class="content">
+
+        <!-- Page 1: Top 7 Repos Today -->
+        <section id="today" class="page-section active">
+            <h1 class="main-header">🚀 Top 7 GitHub Repositories This Week</h1>
+            <p class="sub-header">Discover emerging open-source tools refreshed daily. Last synchronized: <strong id="current-date"></strong></p>
+            
+            <div id="repo-container">
+                <div class="loading-spinner">Fetching top trending repositories...</div>
+            </div>
+
+            <!-- Bottom Ad Banner Placeholder (Commented Out) -->
+            <!-- 
+            <div class="ad-unit banner-ad">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0000000000000000" data-ad-slot="3333333333" data-ad-format="auto"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div> 
+            -->
+        </section>
+
+        <!-- Page 2: History Archives -->
+        <section id="archives" class="page-section">
+            <h1 class="main-header">📅 Weekly History & Archives</h1>
+            <p class="sub-header">Browse historical top-performing repositories from previous weeks.</p>
+
+            <div class="archive-selector">
+                <label for="week-select">Select Snapshot Period:</label>
+                <select id="week-select">
+                    <option>Week 36 (September 2026)</option>
+                    <option>Week 35 (August 2026)</option>
+                </select>
+            </div>
+
+            <div id="archive-container"></div>
+        </section>
+
+        <!-- Page 3: About & Purpose -->
+        <section id="about" class="page-section">
+            <h1 class="main-header">💡 About Github Ranker</h1>
+            <p class="sub-header">Bridging the gap between raw open-source code and developer utility.</p>
+            <div class="text-card">
+                <h3>Why Github Ranker Exists</h3>
+                <p>Every single day, thousands of open-source repositories are published on GitHub. However, software engineers face a common challenge: <strong>information overload</strong>.</p>
+                <blockquote>"How does this tool actually help me, and what specific problem does it solve in my engineering workflow?"</blockquote>
+                <hr>
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Daily Autonomous Curation:</strong> Syncs with GitHub REST API to fetch the top 7 fast-growing repos weekly.</li>
+                    <li><strong>AI-Powered Pain Point Analysis:</strong> Summarizes the concrete problem each repo resolves.</li>
+                    <li><strong>Zero Noise:</strong> Clean top 7 items per day.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Page 4: Privacy Policy -->
+        <section id="privacy" class="page-section">
+            <h1 class="main-header">📜 Privacy Policy</h1>
+            <p class="sub-header">Last updated: <span id="policy-date"></span></p>
+            <div class="text-card">
+                <h3>1. Introduction</h3>
+                <p>Welcome to Github Ranker. We respect your privacy and are committed to protecting any information collected through your use of our website.</p>
+                <h3>2. Information We Collect</h3>
+                <p>We do not collect personally identifiable information directly. However, third-party vendors, including Google AdSense, use cookies to serve ads based on prior visits.</p>
+                <h3>3. Google AdSense</h3>
+                <p>Google's use of advertising cookies enables it and its partners to serve ads to users based on their visits to our site.</p>
+            </div>
+        </section>
+
+        <!-- Page 5: Contact Us -->
+        <section id="contact" class="page-section">
+            <h1 class="main-header">📬 Contact Us</h1>
+            <p class="sub-header">Have feedback, repository suggestions, or business inquiries? Reach out to us.</p>
+            <form id="contact-form" class="form-card">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" id="contact-name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label>Your Email Address</label>
+                    <input type="email" id="contact-email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="contact-message" rows="5" required placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <div id="form-status"></div>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div>© 2026 Github Ranker • All rights reserved.</div>
+            <div>Built with JavaScript, HTML5, AJAX, & GitHub REST API.</div>
+            <div>
+                <a href="#" data-page="about">About</a> • 
+                <a href="#" data-page="privacy">Privacy Policy</a> • 
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
