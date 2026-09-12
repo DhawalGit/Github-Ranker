@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Main Landing / Daily Trending Page -->
     <url>
-        <loc>https://yourdomain.com/</loc>
+        <loc>https://github-ranker.com/</loc>
         <lastmod>2026-09-12</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -10,7 +10,7 @@
 
     <!-- History Archives Section -->
     <url>
-        <loc>https://yourdomain.com/#archives</loc>
+        <loc>https://github-ranker.com/#archives</loc>
         <lastmod>2026-09-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -18,7 +18,7 @@
 
     <!-- About & Purpose Page -->
     <url>
-        <loc>https://yourdomain.com/#about</loc>
+        <loc>https://github-ranker.com/#about</loc>
         <lastmod>2026-09-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
@@ -26,7 +26,7 @@
 
     <!-- Privacy Policy (Important for AdSense Compliance) -->
     <url>
-        <loc>https://yourdomain.com/#privacy</loc>
+        <loc>https://github-ranker.com/#privacy</loc>
         <lastmod>2026-09-12</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
@@ -34,7 +34,7 @@
 
     <!-- Contact Page -->
     <url>
-        <loc>https://yourdomain.com/#contact</loc>
+        <loc>https://github-ranker.com/#contact</loc>
         <lastmod>2026-09-12</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
