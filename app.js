@@ -77,8 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // AJAX Fetch GitHub Trending Repositories
     async function fetchTopRepos() {
         const container = document.getElementById("repo-container");
-        const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
-        const url = `https://api.github.com/search/repositories?q=created:>${sevenDaysAgo}&sort=stars&order=desc&per_page=7`;
+        const url = "https://api.github.com/search/repositories?q=stars:>1000&sort=stars&order=desc&per_page=10";
 
         try {
             const response = await fetch(url);
@@ -103,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             </div>
                         </div>
                         <div class="pain-point">
-                            💡 <strong>Why You Need It:</strong> ${painPoint}
+                            💡 <strong>Task It Solves:</strong> ${painPoint}
                         </div>
                     </div>
                 `;
