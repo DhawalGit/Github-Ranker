@@ -93,6 +93,50 @@ body { display: flex; min-height: 100vh; background-color: var(--bg-main); color
 .badge { display: inline-block; padding: 3px 8px; border-radius: 12px; background: var(--primary); color: #fff; font-size: 0.75rem; font-weight: bold; margin-top: 5px; }
 .pain-point { background-color: var(--pain-bg); border-left: 4px solid var(--pain-border); padding: 12px; margin-top: 15px; border-radius: 4px; font-size: 0.92rem; }
 
+.repo-discussion { margin-top: 18px; }
+.discussion-toggle {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    background: var(--bg-main);
+    color: var(--text-dark);
+    border-radius: 8px;
+    padding: 10px 12px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.discussion-toggle:hover { border-color: var(--primary); }
+.discussion-panel { margin-top: 12px; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px; background: rgba(2, 132, 199, 0.02); }
+.discussion-panel.hidden { display: none; }
+.discussion-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px; }
+.discussion-item { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 12px; }
+.discussion-meta { display: flex; justify-content: space-between; gap: 10px; font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px; }
+.discussion-item p { color: var(--text-dark); line-height: 1.5; white-space: pre-wrap; }
+.discussion-empty { color: var(--text-muted); font-size: 0.92rem; padding: 10px 0; }
+.discussion-form { display: flex; flex-direction: column; gap: 10px; }
+.discussion-form-row input,
+.discussion-form-row textarea {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--card-bg);
+    color: var(--text-dark);
+    padding: 10px 12px;
+    font-size: 0.95rem;
+}
+.discussion-submit {
+    align-self: flex-start;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.discussion-submit:hover { background: var(--primary-hover); }
+
 /* Archive Selector */
 .archive-selector { margin-bottom: 30px; }
 .archive-selector label { display: block; font-size: 0.95rem; font-weight: 600; margin-bottom: 10px; }
